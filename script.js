@@ -1,3 +1,4 @@
+// Loop to change the css variaible in a rainbow slowly
 let i = -1;
 setInterval(()=>{
     i=(i+1)%360;
