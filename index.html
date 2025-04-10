@@ -3,17 +3,22 @@
 <!-- Easter egg -->
 <head>
     <meta charset="utf-8">
+<!--     The title at the browser tab -->
     <title>NarwhalKid.com</title>
     <meta name="color-scheme" content="light only">
+<!--     The icon at the browser tab -->
     <link rel="shortcut icon" href="images/nklogo-icon.ico">
     <meta name="google-site-verification" content="mfhj1WqmsahM3kPfumlTGHBiuUzHwITWPB9IaNiU4K4" />
+<!--     Connects to the css file (https://github.com/NarwhalKid/saad/blob/main/style.css) -->
     <link rel="stylesheet" href="style.css" />
+<!--     Loads the font from Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&amp;display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+<!--     You can ignore this -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4VQ30KFEMT"></script>
     <script>
@@ -24,9 +29,15 @@
         gtag('config', 'G-4VQ30KFEMT');
     </script>
 
-
+<!-- Main header with text inside -->
     <h1>NarwhalKid's Accounts</h1>
+<!--     divs are like folders for elements -->
     <div>
+<!--         "a" elements are used for links -->
+<!--         "href" attributes are where the link goes -->
+<!--         "./" is relative position (so relative from narwhalkid.com in this case is narwhalkid.com/links/youtube) -->
+<!--         target="_blank" is how you get a link to open in a new tab -->
+<!--         p is used for paragraphs, in this case i probably could have used a "span" instead which is just for any sort of text -->
         <a href="./links/youtube/" target="_blank"><p>YouTube</p></a>
     </div>
     <div>
@@ -47,6 +58,7 @@
     <div>
         <a href="./links/discord/" target="_blank"><p>Discord</p></a>
     </div>
+<!--     After the elements are loaded, load the script.js file (https://github.com/NarwhalKid/saad/blob/main/script.js) -->
     <script src="./script.js"></script>
 </body>
 </html>
