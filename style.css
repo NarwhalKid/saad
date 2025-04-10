@@ -7,6 +7,8 @@ body {
 
 h1 {
     color: white;
+/*     font-family sets the font style, the first fonts are tried first and if they dont load they try the next font type and so on */
+/*     in this case i try using montserrat from the google thing i loaded in index.html and if it doesnt work fall back to sans-serif */
     font-family: 'Montserrat', sans-serif;
     font-size: 5em;
     margin: 30px;
@@ -16,8 +18,10 @@ a {
     color: inherit;
     font-family: 'Montserrat', sans-serif;
     font-size: 3em;
+/*     links have underlines by default, this prevents that */
     text-decoration: none;
     padding: 3px;
+/*     This prevents the user from highlighting the text in the links */
     user-select: none;
     height: auto;
     display: flex;
@@ -35,6 +39,7 @@ div {
     cursor: pointer;
     width: 80%;
     margin-left: 10%;
+/*     The 2 styles below make it so the hover effect is a bit slower instead of instantly changing */
     transition-duration: .15s;
     transition-timing-function: ease-out;
 }
@@ -43,12 +48,15 @@ div + div {
     margin-top: 10px;
 }
 
+/* :hover is only active while the user is hovering over the element */
+/* as soon as they stop hovering the styles here are removed */
 div:hover {
     color: var(--highlight-color);
     background-color: black;
 }
 
 :root {
+/*     This is the variable that gets updated by the js */
     --highlight-color: hsl(0 100% 50%);
 }
 
